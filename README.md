@@ -11,3 +11,10 @@
 []På startsidan ska statistik visas för hur många frågor som besvarats, hur många som är rätt och hur många som är fel
 []Statistiken ska uppdateras i realtid när användaren besvarar frågor
 []Statistiken ska sparas i localStorage så att den är kvar när sidan laddas om
+
+
+### LocalStorage-länk
+https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=8
+
+
+https://www.youtube.com/watch?v=-cX5jnQgqSM&t=233s

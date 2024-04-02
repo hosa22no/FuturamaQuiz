@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-purple-color: #8a2be2;
+  --light-color: #fff;
+  --dark-color: #333;
+  --grey-color: #f2f2f278;
+  --transition: all 300ms ease-in-out;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+
+}
+
+.wrapper {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1.5rem, 4rem, 3rem, 4rem;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+    font-family: "Honk", sans-serif;
+    font-size: 4rem;
+ 
+ text-align: center;
+}
+
+.quiz-score{
+    display: flex;
+    justify-content: space-between;
+font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.5rem;
+  border : 3px solid #FFE477;
+  margin: .5rem auto;
+    padding: 0.5rem 1rem;
+ /* width: 100px;
+  height: 50px;*/
+
+}
+
+
+.quiz-question {
+
+ font-size: 1.5rem;
+ font-weight: bold;
+  margin: 1rem 0;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quiz-options{
+    list-style-type: none;
+    margin: 1rem 0;
+}
+.quiz-options li{
+    margin: 0.7rem 0;
+    padding: 0.5rem 0; 
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border : 3px solid #FFE477;
+    background-color: #FFE477;
+    color:#333;
+    text-align: center;
+    box-shadow: 0 5px 7px rgba(25, 5, 5, 0.153);
+
+}
+
+.quiz-options li:hover{
+    background-color: #FF3DAF;
+    border : 3px solid #FF3DAF;
+    color: #FFF;
+}
+
+.quiz-options li:active{
+    transform: scale(0.98);
+}
+/* When the user selects an option button styles 
+.option{
+    background-color: #FF3DAF!important;
+    border : 3px solid #FF3DAF!important;
+    color: #FFF!important;
+}*/
+
+
+
+#quiz-foot button{
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #FF3DAF;
+    border : 3px solid #FF3DAF;
+    color: #FFF;
+    display: block;
+    letter-spacing: 2px;
+    transition: var(--transition);
+    box-shadow: 0 5px 7px rgba(25, 5, 5, 0.153);
+}
+
+#quiz-foot button:hover{
+    border : 3px solid #FFE477;
+    background-color: #FFE477;
+    color:#333;
+}
+
+#quiz-foot button:active{
+    transform: scale(0.98);
+}
+
+#play-again{
+    display: none !important; /* Måste använda important för att det ska funka */
+}
+
+@media screen and (max-width: 678px){
+    
+    .wrapper{
+        margin: 3rem 0;
+        width: 90%;
+        padding: 1.5rem 1rem 3rem 1rem;
+       
+    }
+
+}
