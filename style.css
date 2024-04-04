@@ -95,12 +95,13 @@ font-size: 1.5rem;
 .quiz-options li:active{
     transform: scale(0.98);
 }
-/* When the user selects an option button styles 
-.option{
-    background-color: #FF3DAF!important;
-    border : 3px solid #FF3DAF!important;
-    color: #FFF!important;
-}*/
+
+.quiz-options li.selected {
+    background-color: #ff3daf;
+    border: 3px solid #ff3daf;
+    color: #fff;
+  }
+
 
 
 
